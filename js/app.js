@@ -26,8 +26,8 @@ Enemy.prototype.render = function() {
 // a handleInput() method.
 class Player {
   constructor() {
-    this.x = 0;
-    this.y = 0;
+    this.x = 2;
+    this.y = 5;
     this.sprite = 'images/char-boy.png';
   }
   //update players position
@@ -37,7 +37,7 @@ class Player {
 
   //render the player to the board using the drawImage from engine.js
   render() {
-    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+    ctx.drawImage(Resources.get(this.sprite), this.x *101, this.y*83);
   }
 
   //uses the keyboard to handle movement of player
@@ -45,20 +45,28 @@ class Player {
   handleInput(input) {
     switch(input) {
       case 'up':
-        this.y -=20;
+        if(this.y > 0) {
+          this.y -=1;
+        }
         break;
       case 'down':
-        this.y +=20;
+        if(this.y < 5) {
+          this.y +=1;
+        }
         break;
       case 'left':
-        this.x -=20;
+        if(this.x > 0) {
+        this.x -=1;
+      }
         break;
       case 'right':
-        this.x +=20;
+        if(this.x < 4) {
+        this.x +=1;
+      }
         break;
     }
   }
-  
+
 }
 
 // Now instantiate your objects.
