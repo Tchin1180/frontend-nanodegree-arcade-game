@@ -24,6 +24,7 @@ var Engine = (function(global) {
         ctx = canvas.getContext('2d'),
         lastTime;
 
+
     canvas.width = 505;
     canvas.height = 606;
     doc.body.appendChild(canvas);
@@ -55,6 +56,7 @@ var Engine = (function(global) {
         /* Use the browser's requestAnimationFrame function to call this
          * function again as soon as the browser is able to draw another frame.
          */
+      
         win.requestAnimationFrame(main);
     }
 
@@ -90,10 +92,10 @@ var Engine = (function(global) {
      * render methods.
      */
     function updateEntities(dt) {
-   //allEnemies.forEach(function(enemy) {
-  //     enemy.update(dt);
-   //});
-//   player.update();
+        allEnemies.forEach(function(enemy) {
+          enemy.update(dt);
+        });
+        player.update();
     }
 
     /* This function initially draws the "game level", it will then call
@@ -149,9 +151,9 @@ var Engine = (function(global) {
         /* Loop through all of the objects within the allEnemies array and call
          * the render function you have defined.
          */
-  //      allEnemies.forEach(function(enemy) {
-  //          enemy.render();
-    //    });
+        allEnemies.forEach(function(enemy) {
+            enemy.render();
+        });
 
         player.render();
     }
