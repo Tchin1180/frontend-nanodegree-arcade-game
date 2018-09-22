@@ -1,4 +1,4 @@
-frontend-nanodegree-arcade-game
+[FEND] Nanodegree Arcade Game
 ===============================
 
 Description: This game is simple rendition of the classic game, Frogger. Player needs to reach the safe waters without colliding with an enemy bug.
@@ -21,4 +21,3 @@ Credits
 - Thanks to [matthewcranford](https://matthewcranford.com/arcade-game-walkthrough-part-1-starter-code-breakdown/) for explaining how to create the board and sync up the player's movements to now fall outside of the board.
 - Iloan Alas for the webinar walkthrough on how to add interactions to the enemy bugs.
 - Udacity's Object Oriented Programmming course
-# frontend-nanodegree-arcade-game
