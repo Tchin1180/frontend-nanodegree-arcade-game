@@ -3,6 +3,13 @@
 
 Description: This game is simple rendition of the classic game, Frogger. Player needs to reach the safe waters without colliding with an enemy bug.
 
+How to load the game
+===============================
+1. Clone or download the [repository](https://github.com/Tchin1180/frontend-nanodegree-arcade-game.git) to your local machine.
+2. Once the files are on your local machine, simply navigate to the folder where you saved to repo.
+3. Open ‘index.html’ in your local browser to start the game.
+
+
 How to play the game
 ===============================
 
