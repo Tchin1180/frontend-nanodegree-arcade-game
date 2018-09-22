@@ -1,4 +1,5 @@
 // Enemies our player must avoid
+'use strict';
 var Enemy = function(x,y,speed) {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
@@ -100,13 +101,8 @@ class Player {
         break;
     }
   }
-
-    resetBoard() {
-      //if a collision happens between player and enemy, restart the board
-      this.x = this.startingX;
-      this.y = this.startingY;
-    }
 }
+
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
@@ -140,10 +136,10 @@ document.querySelector('.modal_replay').addEventListener('click', replayGame);
 
 function replayGame() {
   toggleModal();
-  resetPlayer();
+  reset();
 }
 
-function resetPlayer() {
+function reset() {
   player.x = player.startingX;
   player.y = player.startingY;
 }
